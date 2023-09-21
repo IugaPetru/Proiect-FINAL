@@ -1,0 +1,132 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stil {
+  display: flex;
+  padding-top: 10px;
+  color: rgb(20, 24, 24);
+  background-color: rgba(253, 251, 249, 0.918);
+  width: 40rem;
+  height: 35rem;
+}
+.stil_log {
+  padding-top: 10px;
+  color: rgb(20, 24, 24);
+  background-color: rgba(253, 251, 249, 0.918);
+  width: 20rem;
+  height: 15rem;
+}
+.coloanap {
+  display: flex;
+  padding: 10px;
+}
+
+.paslog {
+  padding-top: 15px;
+  color: rgb(248, 250, 250);
+  background-color: rgba(98, 184, 234, 0.996);
+  width: 20rem;
+  height: 15rem;
+}
+
+.slogin {
+  border: none;
+  width: 70px;
+  height: 30px;
+  background-color: rgb(255, 245, 235);
+  margin-left: 35%;
+  margin-top: 10%;
+}
+.nav_login {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.9);
+  margin: auto;
+  width: 20rem;
+  background-color: rgba(98, 184, 234, 0.996);
+}
+
+.nav_reg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.9);
+  margin: auto;
+  width: 40rem;
+  background-color: rgba(98, 184, 234, 0.996);
+}
+
+.log_nav {
+  width: 50px;
+  margin-top: 10%;
+}
+
+.nav_l {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.register {
+  width: 180px;
+  height: 130px;
+  padding: 20px;
+}
+.register_log {
+  width: 180px;
+  height: 100px;
+  padding-left: 20%;
+}
+
+.detali {
+  width: 35%;
+  height: 160px;
+  padding: 20px;
+}
+.coloana {
+  display: flex;
+  padding: 4px;
+}
+
+.item {
+  font-size: larger;
+}
+
+.btn1 {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.9);
+  background-color: rgba(247, 119, 28, 0.875);
+  border: none;
+  font-size: larger;
+  width: 80px;
+  height: 40px;
+  margin-top: 76%;
+  margin-left: 50px;
+  transition: all 0.5s;
+}
+.btn1:hover {
+  transform: scale(1.1);
+}
+
+.btn_login {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.9);
+  border: none;
+  width: 150px;
+  height: 40px;
+  margin-top: 20%;
+  margin-left: 10%;
+  background-color: rgba(247, 119, 28, 0.875);
+  transition: all 0.5s;
+}
+
+.btn_login:hover {
+  transform: scale(1.1);
+}
+
+.t_link {
+  text-align: center;
+  font-size: large;
+  color: rgb(255, 255, 255);
+  width: 65px;
+  transition: all 0.9s;
+}
+
+.t_link.active {
+  background-color: rgba(247, 119, 28, 0.875);
+}

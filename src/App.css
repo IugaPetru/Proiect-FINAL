@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url(/imagini/backgr.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  background-image: url(/imagini/backgr.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background-image: url(/imagini/backgr.jpg);
   display: flex;
-  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  display: flex;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.toog {
+  padding-left: 10px;
+  color: antiquewhite;
+}
+
+.submenu {
+  justify-content: center;
+  display: flex;
+  padding-right: 10px;
+}
+
+.sidenav {
+  padding: 10px 10px;
+  width: 150px;
+  height: 100vh;
+  background-color: rgba(7, 159, 247, 0.7);
+  transition: all 0.5s;
+}
+
+.top_nav {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(7, 159, 247, 0.7);
+  justify-content: right;
+}
+
+.link {
+  font-size: large;
+  width: 100px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  color: azure;
+  padding: 10px 5px;
+  gap: 5px;
+  transition: all 0.5s;
+}
+.link:hover {
+  width: 160px;
+  background: rgba(246, 248, 246, 0.664);
+  color: rgb(19, 18, 18);
+  transition: all 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+.top_link {
+  align-items: right;
+  padding-top: 10px;
+  padding-right: 10px;
+
+  font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.top_button1 {
+  background-color: rgb(253, 175, 5);
+  border-radius: 10px;
+}
+
+.top_button2 {
+  background-color: rgb(63, 253, 5);
+  border-radius: 10px;
+}
+p {
+  color: black;
+}
+
+.cardh {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.9);
+  padding-top: 10px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  width: 30%;
+  text-align: center;
+  height: 200px;
+  background: rgba(11, 192, 237, 0.433);
+  transition: all 0.7s;
+}
+.cardh:hover {
+  transform: scale(1.1);
+  background: rgb(255, 255, 255);
+  animation-name: spincolor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  color: rgba(146, 200, 236, 0.863);
+}
+
+@keyframes spincolor {
+  0% {
+    background-color: #f0de1799;
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    background-color: #1e67ee89;
+  }
+  50% {
+    background-color: #662bf05e;
+  }
+  75% {
+    background-color: #b3172c73;
+  }
+  100% {
+    background-color: rgba(7, 159, 247, 0.338);
+  }
+}
+
+.cardgroup {
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.cardtext {
+  color: #f7f4f5;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 769px) {
+  .cardgroup {
+    flex-direction: column;
+  }
+  .card {
+    width: unset;
+  }
+  .sidenav {
+    height: 250vh;
+  }
+  .top_nav {
+    width: unset;
   }
 }
